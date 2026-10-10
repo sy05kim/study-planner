@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 학습 플래너</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI 학습 플래너</h1>
+    <p>목표를 입력하면 맞춤형 학습 계획을 만들어드립니다.</p>
+
+    <form id="plannerForm">
+      <label>학습 과목</label>
+      <input type="text" id="subject" placeholder="예: 파이썬" required />
+
+      <label>학습 목표</label>
+      <input type="text" id="goal" placeholder="예: 기초 문법 마스터" required />
+
+      <label>학습 기간</label>
+      <input type="number" id="days" placeholder="예: 7" required />
+
+      <label>현재 수준</label>
+      <select id="level" required>
+        <option value="초급">초급</option>
+        <option value="중급">중급</option>
+        <option value="고급">고급</option>
+      </select>
+
+      <button type="submit">학습 계획 생성</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
